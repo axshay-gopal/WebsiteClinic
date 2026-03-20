@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#0ea5e9", // Professional Dental Blue
+        primary: "#f97316",
       },
     },
   },

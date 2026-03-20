@@ -13,7 +13,7 @@ export default function Contact() {
             </div>
             <div>
               <p className="font-bold text-slate-800">Call Us</p>
-              <p className="text-slate-500">+91 497 270 0271</p>
+              <p className="text-slate-500">0497 270 0271</p>
             </div>
             <div>
               <p className="font-bold text-slate-800">Hours</p>
