@@ -43,7 +43,7 @@ const BookingModal = ({ isOpen, onClose }) => {
               type="text"
               required
               className="w-full px-4 py-2 border border-slate-200 rounded-lg focus:ring-2 focus:ring-primary focus:outline-none transition"
-              placeholder="John Doe"
+              placeholder="Enter your full name"
             />
           </div>
 
@@ -55,7 +55,18 @@ const BookingModal = ({ isOpen, onClose }) => {
               type="tel"
               required
               className="w-full px-4 py-2 border border-slate-200 rounded-lg focus:ring-2 focus:ring-primary focus:outline-none transition"
-              placeholder="+1 (555) 000-0000"
+              placeholder="+91 XXXX XXX XXX"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-slate-700 mb-1">
+              Consultation Type
+            </label>
+            <input
+              type="text"
+              required
+              className="w-full px-4 py-2 border border-slate-200 rounded-lg focus:ring-2 focus:ring-primary focus:outline-none transition"
+              placeholder="Enter your Consultation type"
             />
           </div>
 
