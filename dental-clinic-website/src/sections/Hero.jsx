@@ -1,44 +1,39 @@
-function Hero({ onBook }) {
+export default function Hero({ onBookClick }) {
   return (
-    <section
-      id="home"
-      className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-20 pt-28 bg-[#f6f8fb]"
-    >
-      <div className="md:w-1/2">
-        <h1 className="text-5xl md:text-6xl font-semibold text-gray-900 mb-6">
-          Modern Dental Care <br /> Designed for You
-        </h1>
-
-        <p className="text-gray-500 mb-8 text-lg">
-          Comfortable, advanced, and reliable dental treatments in Kochi.
-        </p>
-
-        <div className="flex gap-4">
-          <button
-            onClick={onBook}
-            className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition"
-          >
-            Book Appointment
-          </button>
-
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=Pranam+Dental+Clinic"
-            target="_blank"
-            className="border border-gray-300 text-gray-700 px-6 py-3 rounded-full hover:bg-gray-100 transition"
-          >
-            View Location
-          </a>
+    <section className="pt-32 pb-16 px-6">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div className="flex-1 text-center md:text-left">
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
+            Painless Care for a{" "}
+            <span className="text-primary">Perfect Smile.</span>
+          </h1>
+          <p className="text-slate-500 text-lg mb-8 max-w-lg">
+            At Pranam Dental, we combine advanced technology with a gentle touch
+            to give you the best dental experience in Kannur.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <button
+              onClick={onBookClick}
+              className="bg-primary text-white px-8 py-4 rounded-2xl font-bold shadow-xl shadow-sky-100 hover:-translate-y-1 transition"
+            >
+              Book Appointment
+            </button>
+            <a
+              href="#services"
+              className="px-8 py-4 rounded-2xl font-bold border border-slate-200 hover:bg-slate-50 transition text-center"
+            >
+              View Services
+            </a>
+          </div>
         </div>
-      </div>
-
-      <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
-        <img
-          src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1000&auto=format&fit=crop"
-          className="rounded-2xl shadow-lg w-3/4"
-        />
+        <div className="flex-1 w-full h-[400px] md:h-[600px] bg-slate-100 rounded-[3rem] overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80"
+            className="w-full h-full object-cover"
+            alt="Clinic Interior"
+          />
+        </div>
       </div>
     </section>
   );
 }
-
-export default Hero;

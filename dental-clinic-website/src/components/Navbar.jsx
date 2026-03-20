@@ -1,28 +1,29 @@
-function Navbar({ onBook }) {
+export default function Navbar({ onBookClick }) {
   return (
-    <nav className="flex justify-between items-center px-10 py-4 bg-white border-b border-gray-200 fixed w-full z-50">
-      <h1 className="text-xl font-semibold">SmileCare</h1>
-
-      <div className="flex gap-6 items-center text-sm">
-        <a href="#home" className="text-gray-600 hover:text-black">
-          Home
-        </a>
-        <a href="#services" className="text-gray-600 hover:text-black">
-          Services
-        </a>
-        <a href="#contact" className="text-gray-600 hover:text-black">
-          Contact
-        </a>
-
+    <nav className="fixed w-full z-40 bg-white/80 backdrop-blur-md border-b border-slate-100">
+      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div className="text-xl font-bold tracking-tighter text-primary">
+          PRANAM
+          <span className="text-slate-700 font-medium italic">DENTAL</span>
+        </div>
+        <div className="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
+          <a href="#services" className="hover:text-primary transition">
+            Services
+          </a>
+          <a href="#about" className="hover:text-primary transition">
+            About
+          </a>
+          <a href="#contact" className="hover:text-primary transition">
+            Contact
+          </a>
+        </div>
         <button
-          onClick={onBook}
-          className="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition"
+          onClick={onBookClick}
+          className="bg-primary text-white px-5 py-2.5 rounded-full text-sm font-bold hover:shadow-lg hover:shadow-sky-200 transition"
         >
-          Book Now
+          Book Appointment
         </button>
       </div>
     </nav>
   );
 }
-
-export default Navbar;
