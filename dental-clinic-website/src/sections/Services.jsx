@@ -5,12 +5,24 @@ const services = [
     desc: "Routine cleanings and preventive care for the whole family.",
   },
   {
-    title: "Cosmetic Surgery",
-    desc: "Whiter, brighter, and more aligned teeth with our veneers.",
+    title: "Oral and Maxillofacial Surgery.",
+    desc: "Advanced surgical care for the mouth, jaw, and facial conditions.",
   },
   {
-    title: "Dental Implants",
-    desc: "Permanent solutions for missing teeth using top-tier tech.",
+    title: "Orthodontics",
+    desc: "Straightening teeth and correcting bite issues with braces or aligners.",
+  },
+  {
+    title: "Pedodontics (Pediatric Dentistry)",
+    desc: "Gentle dental care tailored for infants, children, and teens.",
+  },
+  {
+    title: "Implantology",
+    desc: "Permanent tooth replacement solutions using dental implants.",
+  },
+  {
+    title: "Cosmetic Dentistry",
+    desc: "Enhancing your smile with aesthetic dental treatments.",
   },
 ];
 

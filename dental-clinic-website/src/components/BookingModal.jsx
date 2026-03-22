@@ -66,12 +66,15 @@ const BookingModal = ({ isOpen, onClose }) => {
               className="w-full px-4 py-3 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary focus:outline-none bg-slate-50"
             >
               <option value="">Select a service...</option>
-              <option value="General Checkup">General Checkup</option>
-              <option value="Teeth Whitening">Teeth Whitening</option>
-              <option value="Braces & Orthodontics">
-                Braces & Orthodontics
+              <option value="General Checkup">General Dentistry</option>
+              <option value="Teeth Whitening">
+                Oral and Maxillofacial Surgery.
               </option>
-              <option value="Dental Implants">Dental Implants</option>
+              <option value="Braces & Orthodontics">Orthodontics</option>
+              <option value="Dental Implants">Pediatric Dentistry</option>
+              <option value="Implantology">Implantology</option>
+              <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
+              <option value="Other">Other</option>
             </select>
           </div>
 
