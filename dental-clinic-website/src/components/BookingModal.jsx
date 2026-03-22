@@ -20,7 +20,7 @@ const BookingModal = ({ isOpen, onClose }) => {
     e.preventDefault();
 
     // 2. Format the WhatsApp message
-    const clinicNumber = "9207835606"; // Pranam Dental Number
+    const clinicNumber = "9447203305"; // Pranam Dental Number
     const message =
       `Hello Pranam Dental! I would like to book an appointment.%0A%0A` +
       `*Service:* ${formData.service}%0A` +
